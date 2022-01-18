@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>String Template</title>
+</head>
+
+<body>
+  <script>
+    const name = "Hari Santoso";
+    const firstName = "Hari";
+    const lastName = "Santoso";
+
+    const template = `Name : ${name}`;
+    const lama = "Nama Lama : " + firstName + " " + lastName;
+
+    console.info(template);
+
+    // expression string template
+    const nilai = 90;
+    const template2 = `Name : ${name}, Lulus : ${nilai > 70}`;
+    console.info(template2);
+
+    // multiline string
+    let multiLine = `
+Nama saya Hari Santoso
+Hello World
+    Belajar JavaScript Dasar
+    `;
+
+    document.writeln("<pre>");
+    document.writeln(multiLine);
+    document.writeln("</pre>");
+  </script>
+</body>
+
+</html>

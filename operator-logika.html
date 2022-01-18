@@ -5,19 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Variable</title>
+  <title>Operator Logika</title>
 </head>
 
 <body>
   <script>
-    var firstName = "Hari"
-    var lastName = "Santoso"
-    var fullName = "Hari Santoso"
+    const nilaiUjian = 70;
+    const nilaiAbsensi = 90;
 
-    document.writeln(fullName)
-    document.writeln("</br>")
-    document.writeln(fullName)
-    document.writeln("</br>")
+    const lulusUjian = nilaiUjian > 75;
+    const lulusAbsensi = nilaiAbsensi > 75;
+
+    const lulus = lulusUjian && lulusAbsensi;
+    document.writeln(lulus);
   </script>
 </body>
 
