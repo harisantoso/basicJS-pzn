@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tipe Data Array</title>
+</head>
+
+<body>
+  <script>
+    let arrayKosong = [];
+    let araryNama = ['Hari', 'Santoso', 35, true];
+
+    // menambahkan data ke array
+    // co| array.push(value)
+    const names = [];
+    names.push("Hari")
+    names.push("Santoso", 35, true)
+    names.push("Winda", "Indria")
+
+    console.table(names)
+
+    console.info(names[0])
+    console.info(names[1])
+    console.info(names[2])
+
+    // mengubah data array
+    // co| array[index] = "value"
+    names[0] = "Hary";
+    console.table(names)
+
+    // menghapus array 
+    // co| delete array[index]
+    delete names[3]
+    console.table(names)
+
+    // jika ditambahkan lagi
+    names.push("Porgramming")
+
+    names.push(
+      ["Arif", "gunawan"],
+      ["jakarta", "Kebagusan"]
+    )
+
+    console.table(names)
+  </script>
+</body>
+
+</html>

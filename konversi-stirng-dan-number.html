@@ -18,11 +18,36 @@
     document.writeln(`<p>${parseInt("0.9")}</p>`)
     document.writeln(`<p>${parseFloat("0.9")}</p>`)
     document.writeln(`<p>${Number("0.9")}</p>`)
+    document.writeln(`==================`);
 
+    // mengubah dari numbar ke stirn 
+    // co penulisan| number.toSting()
     const a = 1;
     const b = 1;
     const total = a.toString() + b.toString();
     document.writeln(`<p>${total}</p>`);
+    document.writeln(`==================`);
+
+    // NaN(Not a Number)
+    document.writeln(`<p>${parseInt("salah")}</p>`); // NaN
+    document.writeln(`<p>${parseFloat("1.1Hry")}</p>`); // 1.1
+    document.writeln(`<p>${parseInt("5alah")}</p>`); // 5
+    document.writeln(`<p>${parseFloat("s4lah")}</p>`); // NaN
+    document.writeln(`==================`);
+
+    // number
+    document.writeln(`<p>${Number("5alah")}</p>`); // NaN
+    document.writeln(`<p>${Number("5")}</p>`); // 5
+    document.writeln(`==================`);
+
+    const first = Number("salah"); // NaN
+    const totalNumber = first + 100;
+    document.writeln(`<p>${totalNumber}</p`) // NaN
+    document.writeln(`<p>==================</p>`);
+
+    document.writeln(`<p>${isNaN(first)}</p>`) // true
+    document.writeln(`<p>${isNaN(100)}</p>`) // false
+    document.writeln(`<p>${isNaN(NaN)}</p>`) // true
   </script>
 </body>
 
