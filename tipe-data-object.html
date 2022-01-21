@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tipe Data Object</title>
+</head>
+
+<body>
+  <script>
+    // membuat properti di object
+    const person = {};
+    // menambahkan atau mengubah property/attribute
+    person["nama"] = "Winda Indria";
+    person["alamat"] = "Bogor";
+    person["umur"] = "30";
+
+    // menghapus
+    delete person["umur"];
+    console.table(person);
+
+    // membuat object dengan properties
+    const orang = {
+      // contoh perbedaan penuliasn object dan atribut
+      nama_lengkap: "Hari Santoso",
+      "alamat lengkap": "Bogor",
+      staus: "single",
+      umurAnda: 30
+    }
+
+    console.table(orang)
+    // contoh perbedaan penuliasn
+    console.info(`Nama : ${orang.nama_lengkap} `)
+    console.info(`Alamat : ${orang["alamat lengkap"]} `)
+    console.info(`Status : ${orang.staus} `)
+    console.info(`Umur : ${orang.umurAnda} `)
+  </script>
+</body>
+
+</html>

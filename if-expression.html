@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IF Expression</title>
+</head>
+
+<body>
+  <script>
+    const nilaiUjian = "babi";
+
+    if (nilaiUjian >= 80) {
+      document.writeln("<p>Sangat Bagus</p>")
+    } else if (nilaiUjian >= 60) {
+      document.writeln("<p>Bagus</p>")
+      /*
+      masih masalah, belum terpecahkan
+      ubah angka menjadi string
+      */
+    } else if (nilaiUjian <= 60) {
+      document.writeln("<p>Gagal</p>")
+    } else {
+      document.writeln("<p>yg anda masukan bukan angka</p>")
+    }
+  </script>
+</body>
+
+</html>
