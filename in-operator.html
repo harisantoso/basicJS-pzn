@@ -36,21 +36,34 @@
     }
 
     // In Operator Undefined/Null Property
-    const student = {
-      firstName: "winda",
-      middleName: "undefined",
-      lastName: "Indria"
+    // const student = {
+    //   firstName: "winda",
+    //   middleName: "undefined",
+    //   lastName: "Indria"
+    // }
+
+    // if ("middleName" in student) {
+    //   alert(`Hello ${student.middleName}`);
+    // } else {
+    //   alert("Hello Student");
+    // }
+
+    // const names = [null, "Raya", null];
+    // const result = 0 in names;
+    // document.writeln(`<p>${result}</p>`);
+
+    // contoh lain 
+    const com = {
+      com1: "HP",
+      com2: "Dell",
+      com3: null
     }
 
-    if ("middleName" in student) {
-      alert(`Hello ${student.middleName}`);
+    if ("com1" in com) {
+      console.log(com.com1);
     } else {
-      alert("Hello Student");
+      console.log("Wellcome");
     }
-
-    const names = [null, "Raya", null];
-    const result = 0 in names;
-    document.writeln(`<p>${result}</p>`);
   </script>
 </body>
 
