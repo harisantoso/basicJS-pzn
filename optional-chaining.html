@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Optional Chaining</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -22,11 +23,11 @@
     //   country = person.address.country;
     // }
 
-    // penulisan tidak error karan frmat auto save
+    // penulisan tidak error karena format auto save
     // let country = person?.address?.country;
 
     // error
-    let country = person ? .address ? .country;
+    let country = person.address.country;
 
 
     document.writeln(`<p>${country}</p>`);
