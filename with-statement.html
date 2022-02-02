@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>With Statement</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <script>
+    // tanpa with statement
+    const person = {
+      firstName: "Hari",
+      lastName: "Santoso"
+    }
+    console.log(person.firstName);
+    console.log(person.lastName);
+
+    // dengan with statement
+    // *tidak direkomendasikan karena ambigu
+    const mhs = {
+      namaDepan: "Hari",
+      namaBelankang: "Santoso"
+    }
+
+    const namaDepan = "Winda";
+    const namaBelankang = "Indria";
+
+    with(mhs) {
+      console.log(namaDepan); //niat inggin ditampilkan Winda
+      console.log(namaBelankang); //niat inggin ditampilkan Indria
+    }
+  </script>
+</body>
+
+</html>
