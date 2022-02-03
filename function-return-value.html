@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function Return Value</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <script>
+    // contoh 1
+    function sayHello(firshName, lastName) {
+      const say = `Halo ${firshName} ${lastName}`;
+      return say;
+    }
+
+    const result = sayHello("winda", "indria");
+    document.writeln(`<p>${result} </p>`);
+
+
+    // contoh 2
+    function getFinalValue(value) {
+      if (value > 90) {
+        return "A";
+      } else if (value > 80) {
+        return "B";
+      } else if (value > 70) {
+        return "C";
+      } else if (value > 60) {
+        return "D";
+      } else {
+        return "E";
+      }
+    }
+
+    const finalValue = getFinalValue(84);
+    document.writeln(`<p>${finalValue}</p>`);
+
+
+    // contoh 3
+    function isContains(array, searchValue) {
+      for (const element of array) {
+        // Iterasi urutan dari langkah algoritmik dilakukan di loop program
+        console.info(`Iterasi Element ${element}`) // Iterasi
+        if (element === searchValue) {
+          return true;
+        }
+      }
+      return false;
+    }
+
+    const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 15, 18];
+    const search = 6;
+    const found = isContains(array, search);
+    document.writeln(`<p>${found}</p>`);
+  </script>
+</body>
+
+</html>
