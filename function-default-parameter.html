@@ -16,8 +16,11 @@
       console.info(gender);
     }
 
-    register("Santoso");
-    register("Santoso", null);
+    register(); // undefined // UNKOWN
+    register("Santoso"); // Santoso // UNKOWN
+    register("Santoso", "Male"); // Santoso // Male
+    register("Santoso", undefined); // Santoso // UNKOWN
+    register("Santoso", null); // Santoso // null
   </script>
 </body>
 
