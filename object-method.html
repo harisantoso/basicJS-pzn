@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Method</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <script>
+    function sayHello(nama) {
+      document.writeln(`Hello ${nama}`);
+    }
+
+
+    // naonymous fucntion
+    // cara #1
+    const person = {
+      name: "Santoso",
+      sayHello: function (name) {
+        document.writeln(`Hello ${name}`);
+      }
+    };
+
+    // console.info(person);
+    // console.info(person.name); // untuk mengakses nama
+
+    person.sayHello('Winda');
+    person.sayHello('Cicih');
+
+
+    // cara #2
+    const orang = {
+      nama: "Arif Gunawan"
+    };
+
+    orang.katakanHey = function (nama) {
+      alert(`Hey ${nama}`)
+    }
+
+    orang.katakanHey('Budi');
+  </script>
+</body>
+
+</html>

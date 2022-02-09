@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Closure</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <script>
+    function createAdder(value) {
+      const owner = "Hari";
+
+      function add(param) {
+        console.info(owner);
+        return value + param
+      }
+      return add;
+    }
+
+    const addTwo = createAdder(2);
+    // script 25 seakan2 membuat script 26-29
+    // function addTwo(param) {
+    //   console.info("Hari");
+    //   return 2 + param;
+    // }
+
+    console.info(addTwo(2));
+
+    // =======================================
+    // const addThree = createAdder(3);
+    // script 35 seakan2 membuat functin dibawahnya script 36-39
+    function addThree(param) {
+      console.info("Santoso");
+      return 2 + param;
+    }
+    // untuk memanggil
+    console.info(addThree(2));
+  </script>
+</body>
+
+</html>

@@ -22,6 +22,35 @@
     const salamHello = (name) => console.info(`Selamat ${name}`);
 
     salamHello("hari");
+
+    // ==================================== //
+    const sum = (first, second) => {
+      return first + second;
+    }
+
+    console.info(sum(50, 50));
+
+    // ============ ATAU ============= //
+    const jumlah = (kesatu, kedua) => kesatu + kedua;
+
+    console.info(jumlah(20, 20));
+
+    // ============ lebih sederhana ============= //
+    const sebutNama = nama => console.info(`Hay ${nama}`);
+
+    sebutNama("Santoso HR");
+
+
+    // arrow function sebagai parameter
+    function giveMeName(callback) {
+      callback("Liza");
+    }
+    // versi anomymous function
+    giveMeName(function (name) {
+      console.info(`Hi, ${name}`)
+    })
+    // Arrow function
+    giveMeName(name => console.info(`Hii, ${name}`))
   </script>
 </body>
 
