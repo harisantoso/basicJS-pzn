@@ -19,9 +19,9 @@
     console.info(firshName);
     console.info(middleName);
     console.info(lastName);
+
+
     console.info(`===============================`);
-
-
     console.info(`Destructuring Array`);
     // Destructuring Array
     const namaNama = ["Hari", "Santoso", "Raya", "Jovans", "Panjul"];
@@ -31,9 +31,9 @@
     console.info(namaTengah);
     console.info(NamaBelakang);
     console.info(lainnya);
+
+
     console.info(`===============================`);
-
-
     console.info(`Destructuring Object`);
     // Destructuring Object
     const person = {
@@ -60,8 +60,9 @@
     console.info(namaDua);
     console.info(alamat);
     console.info(dll);
-    console.info(`===============================`);
 
+
+    console.info(`===============================`);
     console.info(`Destructuring Nested Object`);
 
     // Destructuring Nested Object
@@ -95,9 +96,9 @@
     console.info(kotaTinggal);
     console.info(negaraTinggl);
     console.info(lainLain);
+
+
     console.info(`===============================`);
-
-
     console.info(`Destructuring di Parameter 1`);
 
     function displayPerson(namaKeSatu) {
@@ -111,6 +112,24 @@
     };
 
     displayPerson(people);
+
+
+    console.info(`===============================`);
+    console.info(`Destructuring di array`);
+
+    function sum(array) {
+      return array[0] + array[1];
+    }
+
+    console.info(sum([1, 1]));
+    console.info(sum([12, 12]));
+    // contoh lain 
+    function jmlArray([first, second]) {
+      return first + second;
+    }
+
+    console.info(jmlArray([1, 2]))
+    console.info(jmlArray([10, 2]))
   </script>
 </body>
 
