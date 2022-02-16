@@ -11,11 +11,11 @@
 
 <body>
   <script>
-    // Arrow Function
     const person = {
       name: "Hari",
+      // Arrow Function
       sayHello: (name) => {
-        console.info(this); // Windo
+        console.info(this); // Windos
         console.info(`Hello ${name}`);
       }
     };
@@ -24,9 +24,10 @@
 
     const orang = {
       nama: "santoso",
+      // Anonymous Function
       sapaHalo: function (nama) {
-        console.info(this);
-        console.info(`Hello ${nama}`);
+        console.info(this); // hasilnya santoso
+        console.info(`Hello ${this.nama}`); // hasilnya santoso
       }
     };
 

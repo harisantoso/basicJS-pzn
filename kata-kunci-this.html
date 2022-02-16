@@ -11,7 +11,7 @@
 
 <body>
   <script>
-    // console.info(this); //window
+    console.info(this); //window
 
     function sample() {
       console.info(this);
@@ -19,15 +19,16 @@
       function inner() {
         console.info(this);
       }
-      // inner(); //window
+      inner(); //window
     }
 
-    // sample(); //window
+    sample(); //window
 
 
     const person = {
-      name: "Hari satntoso",
+      name: "Hari santoso",
       sayHello: function (value) {
+        // console.info(this);
         console.info(`Hay ${value}, my Name is ${this.name}`);
       }
     };

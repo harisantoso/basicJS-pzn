@@ -51,10 +51,15 @@
     //   console.info(number);
     // }
 
-    const numbers = buatGanjil(20);
+    // lazy harus menulis ulang untuk menggilnya
+    const numbers = buatGanjil(8);
     console.info(numbers.next().value);
     console.info(numbers.next().value);
     console.info(numbers.next().value);
+    console.info(numbers.next().value);
+
+    // eager ditampilkan keseluruhan tapan perlu memanggil
+    const nomor = buatGanjilArray(4);
   </script>
 </body>
 

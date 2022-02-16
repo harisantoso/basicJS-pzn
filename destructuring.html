@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destructuring</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <script>
+    const names = ["Winda", "Indria", "Santoso"];
+    const firshName = names[0];
+    const middleName = names[1];
+    const lastName = names[2];
+
+    console.info(firshName);
+    console.info(middleName);
+    console.info(lastName);
+    console.info(`===============================`);
+
+
+    console.info(`Destructuring Array`);
+    // Destructuring Array
+    const namaNama = ["Hari", "Santoso", "Raya", "Jovans", "Panjul"];
+    const [namaDepan, namaTengah, NamaBelakang, ...lainnya] = namaNama;
+
+    console.info(namaDepan);
+    console.info(namaTengah);
+    console.info(NamaBelakang);
+    console.info(lainnya);
+    console.info(`===============================`);
+
+
+    console.info(`Destructuring Object`);
+    // Destructuring Object
+    const person = {
+      namaSatu: "Hari",
+      namaDua: "Santoso",
+      alamat: {
+        jalan: "Pahlawan",
+        kota: "Bogor",
+        negara: "Indonesia"
+      },
+      hobi: "Destructuring Object",
+      pekerjaan: "programming"
+    };
+
+    const {
+      namaSatu,
+      namaDua,
+      alamat,
+      ...dll
+    } = person;
+
+    // mengambil destructuring object
+    console.info(namaSatu);
+    console.info(namaDua);
+    console.info(alamat);
+    console.info(dll);
+    console.info(`===============================`);
+
+    console.info(`Destructuring Nested Object`);
+
+    // Destructuring Nested Object
+    const orang = {
+      namaKeSatu: "Hari",
+      namaKeDua: "Santoso",
+      almt: {
+        jln: "mayor oking",
+        kotaTinggal: "jakarta",
+        negaraTinggl: "Indonesia"
+      },
+      Kesukkan: "Destructuring Nested Object",
+      pekerjaanUtama: "programming"
+    };
+
+    const {
+      namaKeSatu,
+      namaKeDua,
+      almt: {
+        jln,
+        kotaTinggal,
+        negaraTinggl
+      },
+      ...lainLain
+    } = orang;
+
+    // mengambil destructuring object
+    console.info(namaSatu);
+    console.info(namaDua);
+    console.info(jln);
+    console.info(kotaTinggal);
+    console.info(negaraTinggl);
+    console.info(lainLain);
+    console.info(`===============================`);
+
+
+    console.info(`Destructuring di Parameter 1`);
+
+    function displayPerson(namaKeSatu) {
+      console.info(people.namaKeSatu);
+      console.info(people.namaKeDua);
+    };
+
+    const people = {
+      namaKeSatu: "Eddy",
+      namaKeDua: "Winarso"
+    };
+
+    displayPerson(people);
+  </script>
+</body>
+
+</html>

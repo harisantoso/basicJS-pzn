@@ -45,10 +45,12 @@
     function giveMeName(callback) {
       callback("Liza");
     }
+
     // versi anomymous function
     giveMeName(function (name) {
       console.info(`Hi, ${name}`)
     })
+
     // Arrow function
     giveMeName(name => console.info(`Hii, ${name}`))
   </script>
