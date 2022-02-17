@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Default Value Destructuring</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <script>
+    const names = ["Panjul", "Joya"]
+    const [firstName = "Hari", middleName = "Santoso", lastName = "Raya"] = names;
+
+    console.info(firstName);
+    console.info(middleName);
+    console.info(lastName);
+    console.info(`===================`);
+
+    // default value destructuring object
+    const person = {
+      namaDepan: "Winda",
+      namaTengah: "hry",
+      namaBelakang: "indria"
+    };
+
+    const {
+      namaDepan = "Hari",
+        namaTengah = "Santoso",
+        namaBelakang = "Joya"
+    } = person;
+    console.info(namaDepan);
+    console.info(namaTengah);
+    console.info(namaBelakang);
+
+    console.info(`===================`);
+
+    // menggunakan nama variable lain
+    {
+      const person = {
+        firstName: "Arif",
+        middleName: "Ika",
+        lastName: "Gunawan"
+      };
+
+      let {
+        firstName: namaDepan = "Galih",
+        middleName: namaTengah = "Rusadi",
+        lastName: NamaBelakang = "Nia"
+      } = person;
+
+      console.info(namaDepan);
+      console.info(namaTengah);
+      console.info(NamaBelakang);
+    }
+  </script>
+</body>
+
+</html>

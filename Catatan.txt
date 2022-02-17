@@ -1,7 +1,6 @@
 Javascript Dasar Pemprogramman Zaman Now
 
-dibuat tanggal
-12-01-2022
-sampai dengan menit 8.3
+dibuat tanggal 12-01-2022
+selesai tanggal 17-02-2022
 
 alias graph="git log --all --decorate --oneline --graph"
